@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from .models import Destination
 
 
 def index(request):
-    return render(request, 'index.html')
+    decs = Destination.objects.all()
+
+    return render(request, 'index.html', {'dest': decs})
 
 
 def about(request):
