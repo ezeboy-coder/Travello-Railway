@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-p_48-u_3d5g$8rjnfhvdr!03cc(n37km6ib5%z9z_%y-ahlrcc
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+CSRF_TRUSTED_ORIGINS = ['https://travello-railway-production.up.railway.app']
 ALLOWED_HOSTS = ["*"]
 
 # Application definition
